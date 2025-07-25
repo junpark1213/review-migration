@@ -21,7 +21,7 @@ REVIEW_IDS_TO_MOVE = [
 
 def move_review_to_new_entity(review_id, new_entity_id):
     """
-    Moves a single review by updating its locationId.
+    Moves a single review by updating its entityId.
     """
     print(f"  -> Moving review ID {review_id} to entity {new_entity_id}...")
     
@@ -33,7 +33,7 @@ def move_review_to_new_entity(review_id, new_entity_id):
     }
     
     payload = {
-        "locationId": new_entity_id
+        "entityId": new_entity_id
     }
     
     headers = {
