@@ -109,7 +109,9 @@ def main():
 
     print("\n--- Migration Complete ---")
     print(f"Successfully moved: {success_count} reviews.")
+    print(f"List of successfully moved reviews: {success_list}")
     print(f"Failed to move: {failure_count} reviews.")
+    print(f"List of failed moved reviews: {failure_list}")
     print("--------------------------")
 
 if __name__ == "__main__":
